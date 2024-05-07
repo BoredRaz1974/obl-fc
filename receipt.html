@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            width: 500px;
+        }
+
+        h1 {
+            color: linear-gradient(to left, #00ff0d, #ff0000);  
+              }
+
+        body {
+            background: linear-gradient(to right, #04139e, #01062e);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: linear-gradient(to right, #04139e, #01062e);
+            overflow: hidden;
+            color: #fff;
+            box-shadow: linear-gradient(to left, #04139e, #010635);
+        }
+        .navbar-brand {
+            float: left;
+            padding: 15px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .navbar-tabs {
+            float: right;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-tabs a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .navbar-tabs a:hover {
+            color: #ffd700;
+        }
+        .fullscreen-dropdown {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh; /* Set height to cover entire viewport height */
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+        .fullscreen-dropdown.active {
+            display: block;
+        }
+        .dropdown-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(to right,#040e68, #01062e);
+            padding: 20px;
+            color: #fff;
+        }
+        .dropdown-content a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+
+        .container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+  }
+
+  .image {
+    flex: 1; /* Take up 50% of the container */
+    max-width: 50%; /* Set maximum width */
+  }
+
+  .text {
+    flex: 1; /* Take up 50% of the container */
+    max-width: 50%; /* Set maximum width */
+    padding: 0 20px; /* Add some spacing between the image and text */
+  }
+
+  /* Optional: Adjust styles for better appearance */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+  }
+
+   h2 {
+    color: #fff;
+   }
+
+    p {
+        color: #fff;
+    }
+
+    </style>
+</head>
+<body>
+
+
+
+<script>
+    const aboutDropdown = document.getElementById('aboutDropdown');
+    const aboutLink = document.querySelector('.about-link');
+
+    aboutLink.addEventListener('mouseenter', function() {
+        aboutDropdown.classList.add('active');
+    });
+
+    aboutDropdown.addEventListener('mouseleave', function() {
+        aboutDropdown.classList.remove('active');
+    });
+</script>
+<h1 style="color: #fff; font-family: sans-serif; text-align: center; font-size: 40px;">Please take a screenshot.</h1>
+<img style="align-content: center; margin-left: 42%; margin-top: 5%;" src="https://media.discordapp.net/attachments/1214317002827767929/1237421572042784908/image.png?ex=663b9624&is=663a44a4&hm=bc5909af712b1eae67757d8d2ffed36ad8136d3d0345b958a44f8f8c8759ccd6&=&format=webp&quality=lossless">
+ <p style="text-align: center; margin-top: 75%;">5AJN1</p>
+
+
+</body>
+</html>

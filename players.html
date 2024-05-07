@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players</title>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            width: 500px;
+        }
+
+        h1 {
+            color: linear-gradient(to left, #00ff0d, #ff0000);  
+              }
+
+        body {
+            background: linear-gradient(to right, #04139e, #01062e);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: linear-gradient(to right, #04139e, #01062e);
+            overflow: hidden;
+            color: #fff;
+            box-shadow: linear-gradient(to left, #04139e, #010635);
+        }
+        .navbar-brand {
+            float: left;
+            padding: 15px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .navbar-tabs {
+            float: right;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-tabs a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .navbar-tabs a:hover {
+            color: #ffd700;
+        }
+        .fullscreen-dropdown {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh; /* Set height to cover entire viewport height */
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+        .fullscreen-dropdown.active {
+            display: block;
+        }
+        .dropdown-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(to right,#040e68, #01062e);
+            padding: 20px;
+            color: #fff;
+        }
+        .dropdown-content a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+
+        .container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+  }
+
+  .image {
+    flex: 1; /* Take up 50% of the container */
+    max-width: 50%; /* Set maximum width */
+  }
+
+  .text {
+    flex: 1; /* Take up 50% of the container */
+    max-width: 50%; /* Set maximum width */
+    padding: 0 20px; /* Add some spacing between the image and text */
+  }
+
+  /* Optional: Adjust styles for better appearance */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+  }
+
+   h2 {
+    color: #fff;
+   }
+
+    p {
+        color: #fff;
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div style="font-size: 30px;" class="navbar-brand">O B L F C</div>
+    <div class="navbar-tabs">
+        <a href="index.html" style="font-size: 25px;">Home</a>
+        <div class="about-dropdown">
+            <a href="#" style="font-size: 25px;" class="about-link">About</a>
+            <div class="fullscreen-dropdown" id="aboutDropdown">
+                <div class="dropdown-content">
+                  <a href="Tickets.html">Tickets</a>
+                    <a href="players.html">Players</a>
+                    <a href="ambassador.html">Brand Ambassador</a>
+                    <a href="stadium.html">Home Stadium</a>
+                    
+                    <a href="Partners.html">Brand partners</a>
+                    <a href="Our Story.html">Our Story</a>
+                    <a href="Gallery.html">Gallery</a>
+                    <a href="contact us.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const aboutDropdown = document.getElementById('aboutDropdown');
+    const aboutLink = document.querySelector('.about-link');
+
+    aboutLink.addEventListener('mouseenter', function() {
+        aboutDropdown.classList.add('active');
+    });
+
+    aboutDropdown.addEventListener('mouseleave', function() {
+        aboutDropdown.classList.remove('active');
+    });
+</script>
+<h1 style="color: #fff; font-family: sans-serif; text-align: center; font-size: 40px;">O B L F C</h1>
+<div class="container">
+    <div class="image">
+      <img style="margin: 25%;" src="https://media.discordapp.net/attachments/1214317002827767929/1217911229188804769/Ayas_head_messi_body.png?ex=663880f8&is=66372f78&hm=aa74accf94a66ab231cc4e6cac2d454ffc9bed5134b74a7e1131ed4d276fe8cd&=&format=webp&quality=lossless&width=550&height=327" alt="Sample Image">
+    </div>
+    <div class="text">
+      <h2>Lionel Ayas</h2>
+      <p>Team Captain</p>
+    </div>
+  </div>
+  
+<div class="container">
+    <div class="image">
+      <img style="margin: 25%;" src="https://media.discordapp.net/attachments/1214317002827767929/1236698049687060480/Anas_head_Ronaldo_body.png?ex=6638f44f&is=6637a2cf&hm=053a114d6c22b2d4700ea53bce652693913bba4b27467a89e2a9f2af2d632f68&=&format=webp&quality=lossless&width=338&height=350" alt="Sample Image">
+    </div>
+    <div class="text">
+      <h2>Cristiano Anas</h2>
+      <p>Forward</p>
+    </div>
+  </div>
+  
+<div class="container">
+    <div class="image">
+      <img style="margin: 25%;" src="https://media.discordapp.net/attachments/1214317002827767929/1236698225700900864/rihan_head_mbappe_body.png?ex=6638f479&is=6637a2f9&hm=c6269afe27fa9099063f9137865958959f1a20a64a2172632450f476e53c28ef&=&format=webp&quality=lossless" alt="Sample Image">
+    </div>
+    <div class="text">
+      <h2>Kylian Rihan</h2>
+      <p>Midfielder</p>
+    </div>
+  </div>
+  
+<div class="container">
+    <div class="image">
+      <img style="margin: 25%;" src="https://media.discordapp.net/attachments/1214317002827767929/1236698438389731408/sinan_head_martinez_body.png?ex=6638f4ac&is=6637a32c&hm=e857ca319ef54a7468121e9e76bae2dc69a2e42616761421b1f71bd3430969b2&=&format=webp&quality=lossless" alt="Sample Image">
+    </div>
+    <div class="text">
+      <h2>Emiliano Sinan</h2>
+      <p>Goalkeeper</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image">
+      <img style="margin: 25%;" src="https://media.discordapp.net/attachments/1214317002827767929/1218218835853709414/saeed_head_zlatan_body.png?ex=66384df3&is=6636fc73&hm=608fb76ce7ed474be8306ac8c606bd6653e94d6e28e6a4bbc15f7b99ea2880a9&=&format=webp&quality=lossless&width=297&height=350" alt="Sample Image">
+    </div>
+    <div class="text">
+      <h2>Saeed Ibrahimovic</h2>
+      <p>Forward</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image">
+      <img style="margin: 25%;" src="https://i.pinimg.com/564x/c0/78/9c/c0789cbe164309fefbddf0d1f0ea1d88.jpg" alt="Sample Image">
+    </div>
+    <div class="text">
+      <h2>Erling Muhammed</h2>
+      <p>Midfielder</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="image">
+      <img style="margin: 25%;" src="https://i.pinimg.com/564x/c0/78/9c/c0789cbe164309fefbddf0d1f0ea1d88.jpg" alt="Sample Image">
+    </div>
+    <div class="text">
+      <h2>Diyan Jr</h2>
+      <p>Defender</p>
+    </div>
+  </div>
+
+</body>
+</html>

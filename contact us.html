@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            width: 500px;
+        }
+
+        h1 {
+            color: linear-gradient(to left, #00ff0d, #ff0000);  
+              }
+
+        body {
+            background: linear-gradient(to right, #04139e, #01062e);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: linear-gradient(to right, #04139e, #01062e);
+            overflow: hidden;
+            color: #fff;
+            box-shadow: linear-gradient(to left, #04139e, #010635);
+        }
+        .navbar-brand {
+            float: left;
+            padding: 15px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .navbar-tabs {
+            float: right;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-tabs a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .navbar-tabs a:hover {
+            color: #ffd700;
+        }
+        .fullscreen-dropdown {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh; /* Set height to cover entire viewport height */
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+        .fullscreen-dropdown.active {
+            display: block;
+        }
+        .dropdown-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(to right,#040e68, #01062e);
+            padding: 20px;
+            color: #fff;
+        }
+        .dropdown-content a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+
+        .container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+  }
+
+  .image {
+    flex: 1; /* Take up 50% of the container */
+    max-width: 50%; /* Set maximum width */
+  }
+
+  .text {
+    flex: 1; /* Take up 50% of the container */
+    max-width: 50%; /* Set maximum width */
+    padding: 0 20px; /* Add some spacing between the image and text */
+  }
+
+  /* Optional: Adjust styles for better appearance */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+  }
+
+   h2 {
+    color: #fff;
+   }
+
+    p {
+        color: #fff;
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div style="font-size: 30px;" class="navbar-brand">O B L F C</div>
+    <div class="navbar-tabs">
+        <a href="index.html" style="font-size: 25px;">Home</a>
+        <div class="about-dropdown">
+            <a href="#" style="font-size: 25px;" class="about-link">About</a>
+            <div class="fullscreen-dropdown" id="aboutDropdown">
+                <div class="dropdown-content">
+                    <a href="Tickets.html">Tickets</a>
+                    <a href="players.html">Players</a>
+                    <a href="ambassador.html">Brand Ambassador</a>
+                    <a href="stadium.html">Home Stadium</a>
+                    
+                    <a href="Partners.html">Brand partners</a>
+                    <a href="Our Story.html">Our Story</a>
+                    <a href="Gallery.html">Gallery</a>
+                    <a href="contact us.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const aboutDropdown = document.getElementById('aboutDropdown');
+    const aboutLink = document.querySelector('.about-link');
+
+    aboutLink.addEventListener('mouseenter', function() {
+        aboutDropdown.classList.add('active');
+    });
+
+    aboutDropdown.addEventListener('mouseleave', function() {
+        aboutDropdown.classList.remove('active');
+    });
+</script>
+<h1 style="color: #fff; font-family: sans-serif; text-align: center; font-size: 40px;">O B L F C</h1>
+<div class="container">
+    <div class="image">
+      <img style="margin: 25%;" src="https://media.discordapp.net/attachments/1214317002827767929/1217633808036270170/oblfc-Photoroom.png-Photoroom.png?ex=663b731a&is=663a219a&hm=e461ef717698d46b0292a57b47897a786f42840ea2ff8119d1562bb6268eae25&=&format=webp&quality=lossless" alt="Sample Image">
+    </div>
+    <div class="text">
+      <h2>Contact us at</h2>
+      <p>laptopgamer216@gmail.com</p>
+    </div>
+  </div>
+  
+
+
+</body>
+</html>
